@@ -25,13 +25,14 @@ export default {
         vendor: this.card.vendor,
         number: this.card.number,
         validMonth: this.card.validMonth,
-        validDay: this.card.validDay,
+        validYear: this.card.validYear,
+        active: false,
       };
     },
   },
   data() {
     return {
-      title: "ADD NEW BANK CARD",
+      title: "ADD A NEW BANK CARD",
       cardTitle: "NEW CARD",
       card: {
         holder: "",
@@ -45,6 +46,9 @@ export default {
   methods: {
     addCard() {
       this.$root.setAddCard(this.cardToSend);
+    },
+    expiryDate() {
+      return this.$root.form.validMonth;
     },
   },
 };

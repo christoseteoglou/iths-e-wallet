@@ -9,25 +9,40 @@
 </template>
 
 <style lang="scss">
-@import url("https://fonts.googleapis.com/css2?family=PT+Mono&family=Source+Sans+Pro:wght@700&display=swap");
+@import url(https://fonts.googleapis.com/css?family=PT+Mono|Source+Sans+Pro:600,700&display=swap);
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  font-family: PT Mono, monospace;
+  padding: 1rem;
+  height: 100vh;
+  max-width: 24rem;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-#nav {
-  padding: 30px;
+// body {
+//   margin: 0;
+// }
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+// #app {
+//   font-family: Avenir, Helvetica, Arial, sans-serif;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+//   font-family: PT Mono, monospace;
+//   padding: 1rem;
+//   height: 100vh;
+//   max-width: 24rem;
+//   margin: 0 auto;
+//   -webkit-box-sizing: border-box;
+//   box-sizing: border-box;
+// }
 </style>
