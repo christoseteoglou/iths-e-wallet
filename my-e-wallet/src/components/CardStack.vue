@@ -31,6 +31,10 @@ export default {
 </script>
 
 <style scoped>
+div {
+  cursor: pointer;
+}
+
 ul {
   list-style: none;
   padding: 0;

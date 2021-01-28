@@ -11,25 +11,13 @@ new Vue({
       cards: [
         {
         id: "1",
-        holder: "christoffer wallenberg",
-        vendor: "bitcoin",
-        number: "4444444444444444",
-        validMonth: "03",
-        validYear: "2024",
+        holder: "christos eteoglou",
+        vendor: "evil",
+        number: "1337800813378008",
+        validMonth: "07",
+        validYear: "24",
         active: true,
         },
-        
-        
-      ],
-      activeCard: [
-        {
-        id: "",
-        holder: "",
-        vendor: "",
-        number: "",
-        validMonth: "",
-        validYear: "",
-        }
       ],
     }
   },
@@ -42,6 +30,15 @@ new Vue({
       let activeId = this.cards.find(card => card.id === id);
       activeTrue.active = false
       activeId.active = true
+    },
+    removeActiveCard() {
+      if(this.cards.length === 1) {
+        alert('bajs')
+      } else {
+        let cardPlacement = this.cards.map(function(evt) {evt.active;}).indexOf(true);
+        this.cards.splice(cardPlacement)
+        this.cards[0].active = true;
+      }
     },
   },
   render: h => h(App)

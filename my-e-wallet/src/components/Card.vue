@@ -1,9 +1,5 @@
 .<template>
-  <article
-    class="card"
-    :class="card.vendor"
-    @click="$emit('clicked', thisCard)"
-  >
+  <article class="card" :class="card.vendor">
     <header>
       <!-- <img src="../assets/chip-light.svg" alt="credit card chip" /> -->
       <img
@@ -36,7 +32,7 @@
       </aside>
       <aside class="valid">
         <span>Valid until</span>
-        <p>{{ card.validMonth }} / {{ card.validYear }}</p>
+        <p>{{ card.validMonth }}/{{ card.validYear }}</p>
       </aside>
     </section>
   </article>
@@ -54,9 +50,6 @@ export default {
     cardNumber() {
       return this.card.number.match(/.{1,4}/g).join(" ");
     },
-    selectVendor() {
-      return this.card.vendor;
-    },
   },
 };
 </script>
@@ -70,29 +63,12 @@ export default {
   padding: 1rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-box-shadow: 0 0 0.5rem rgb(0 0 0 / 40%);
   box-shadow: 0 0 0.5rem rgb(0 0 0 / 40%);
   display: grid;
   gap: 0.5rem 0;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: 2.8rem;
-  text-shadow: -1px -1px 2px hsl(0deg 0% 100% / 40%);
-}
-.card {
-  max-width: 24rem;
-  height: 14rem;
-  border-radius: 0.6rem;
-  background: #eee;
-  padding: 1rem;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-box-shadow: 0 0 0.5rem rgb(0 0 0 / 40%);
-  box-shadow: 0 0 0.5rem rgb(0 0 0 / 40%);
-  display: grid;
-  gap: 0.5rem 0;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 2.8rem;
-  text-shadow: -1px -1px 2px hsl(0deg 0% 100% / 40%);
+  text-shadow: -1px -1px 2px hsl(0deg 0% 100% / 80%);
 }
 
 .card header {

@@ -32,7 +32,7 @@ export default {
   },
   data() {
     return {
-      title: "ADD A NEW BANK CARD",
+      title: "ADD NEW CARD",
       cardTitle: "NEW CARD",
       card: {
         holder: "",
