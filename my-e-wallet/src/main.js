@@ -18,6 +18,33 @@ new Vue({
         validYear: "24",
         active: true,
         },
+        {
+        id: "2",
+        holder: "Vanessa Lamb",
+        vendor: "blockchain",
+        number: "2628081506092703",
+        validMonth: "07",
+        validYear: "24",
+        active: true,
+        },
+        {
+        id: "3",
+        holder: "Phyllis Malone",
+        vendor: "bitcoin",
+        number: "3532334425636152",
+        validMonth: "07",
+        validYear: "24",
+        active: true,
+        },
+        {
+        id: "4",
+        holder: "Harriet Castro",
+        vendor: "ninja",
+        number: "5267103948965635",
+        validMonth: "07",
+        validYear: "24",
+        active: true,
+        },
       ],
     }
   },
@@ -33,7 +60,7 @@ new Vue({
     },
     removeActiveCard() {
       if(this.cards.length === 1) {
-        alert('bajs')
+        alert('You need at least one active card!')
       } else {
         let cardPlacement = this.cards.map(function(evt) {evt.active;}).indexOf(true);
         this.cards.splice(cardPlacement)

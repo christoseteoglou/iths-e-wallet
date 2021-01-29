@@ -16,8 +16,6 @@ export default {
 
 <style scoped>
 .top p {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   font-size: 0.8rem;
   font-weight: 600;
@@ -36,8 +34,6 @@ header {
 }
 
 .top h1 {
-  -webkit-box-flex: 2;
-  -ms-flex: 2;
   flex: 2;
   line-height: 2rem;
   font-size: 2rem;

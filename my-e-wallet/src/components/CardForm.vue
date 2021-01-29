@@ -111,7 +111,6 @@ select {
   padding: 0.5rem;
   height: 2.6rem;
   margin: 0 0 0.8rem;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 1rem;
   width: 100%;
@@ -119,7 +118,6 @@ select {
 
 input {
   text-rendering: auto;
-  color: -internal-light-dark(black, white);
   letter-spacing: normal;
   word-spacing: normal;
   text-transform: none;
@@ -128,15 +126,12 @@ input {
   display: inline-block;
   text-align: start;
   appearance: auto;
-  background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
-  -webkit-rtl-ordering: logical;
   cursor: text;
   margin: 0em;
   font: 400 13.3333px Arial;
   padding: 1px 2px;
   border-width: 2px;
   border-style: inset;
-  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
   border-image: initial;
 }
 
@@ -164,9 +159,7 @@ option {
 
 button {
   display: flex;
-  -webkit-box-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
   align-items: center;
   font-size: 1.2rem;
   text-transform: uppercase;

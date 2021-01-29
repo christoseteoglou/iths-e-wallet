@@ -1,12 +1,7 @@
 <template>
   <div class="home">
-    <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
     <Top :title="title" :cardTitle="cardTitle" />
-    <div
-      @mouseover="hover = true"
-      @mouseleave="hover = false"
-      @click="removeCard()"
-    >
+    <div class="topActive" @click="removeCard()">
       <Card :card="activeCard" />
     </div>
     <CardStack :cards="cards" />
@@ -15,7 +10,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
 import Top from "@/components/Top.vue";
 import Card from "@/components/Card.vue";
 import CardStack from "@/components/CardStack";
@@ -60,9 +54,7 @@ button:hover {
 
 button {
   display: flex;
-  -webkit-box-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
   align-items: center;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -78,5 +70,9 @@ button {
   margin: 2rem 0px;
   height: 4rem;
   width: 100%;
+}
+
+.topActive {
+  cursor: pointer;
 }
 </style>

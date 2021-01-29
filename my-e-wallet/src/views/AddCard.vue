@@ -39,7 +39,7 @@ export default {
         vendor: "",
         number: "",
         validMonth: "",
-        validDay: "",
+        validYear: "",
       },
     };
   },

@@ -1,7 +1,6 @@
 .<template>
   <article class="card" :class="card.vendor">
     <header>
-      <!-- <img src="../assets/chip-light.svg" alt="credit card chip" /> -->
       <img
         v-if="card.vendor === 'bitcoin'"
         src="../assets/chip-dark.svg"
@@ -61,32 +60,24 @@ export default {
   border-radius: 0.6rem;
   background: #eee;
   padding: 1rem;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   box-shadow: 0 0 0.5rem rgb(0 0 0 / 40%);
   display: grid;
   gap: 0.5rem 0;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: 2.8rem;
-  text-shadow: -1px -1px 2px hsl(0deg 0% 100% / 80%);
+  text-shadow: -1px -1px 2px hsl(0deg 0% 100% / 40%);
 }
 
 .card header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   grid-column: auto/span 2;
   grid-row: auto/span 2;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
   align-items: flex-start;
 }
 
 .card header {
-  -ms-flex-item-align: end;
   align-self: flex-end;
   opacity: 1;
 }
@@ -99,8 +90,6 @@ export default {
 .card section.number {
   grid-column: auto/span 2;
   grid-row: auto/span 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -115,14 +104,10 @@ export default {
 .card section.number {
   grid-column: auto/span 2;
   grid-row: auto/span 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .card section.info aside.holder {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
   flex: 1;
 }
 
@@ -153,8 +138,6 @@ p {
 }
 
 .card section.info aside.holder {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
   flex: 1;
 }
 
